@@ -35,3 +35,21 @@ Ao final do dia, a caixa separa as comandas e o gerente anota cada valor, nome d
 Para melhorar o funcionamento da padaria, o software deve permitir que a atendente marque o que foi pedido no sistema gerando uma comanda, o sistema calcula o valor total da comanda/pedido e agiliza o pagamento no caixa. Todos os pedidos ficarão registrados no sistema e no final do dia o gerente tem a possibilidade de gerar um relatório contendo: Entrada e saída de produtos, produtos mais vendidos e menos vendidos,  faturamento diário ou semanal.  Para melhorar a gestão financeira e produtos e gerenciamento dos funcionários. 
 
 </font>
+
+# Proposta:
+
+<font size=4>
+
+O software irá controlar todo o estoque organizando os produtos e filtrando por menor preço, maior preço, mais vendido, menos vendido, ordem alfabética crescente ou decrescente.
+
+O sistema será dividido em 3 níveis de acesso: atendente, caixa, gerente.
+A atendente poderá apenas visualizar e adicionar os produtos dos clientes a uma comanda virtual, após gerada essa comanda terá as informações dos produtos e um número para identificar de qual cliente é a comanda;
+
+A comanda será criada após o atendente confirmar tudo que o cliente deseja, com um número de identificação igual ao da ficha retirada pelo cliente para ser atendido, essa comanda terá o nome do cliente, quais produtos ele pediu, a quantidade deles, o valor deles e o total. Sendo possível a edição desses itens após o cliente se redirecionar ao caixa e o funcionário confirmar seu pedido. Itens do balcão do caixa ou geladeira como: balas, chicletes, água e refrigerantes serão escaneados pelo caixa após o cliente entregá-los e será registrado na comanda final, resolvendo o problema de produtos não listados na comanda inicial da atendente;
+
+A caixa poderá visualizar e adicionar os produtos igual a atendente, porém também poderá editar os produtos caso o cliente queira adicionar ou remover algum produto. Receberá a comanda da atendente com o número e irá chamar o cliente com esse número, vai perguntar ao cliente se isso é tudo que ele quer e depois perguntar a forma de pagamento. Finalizado o pagamento, a caixa irá fazer a nota fiscal e entregar ao cliente caso desejado;
+
+O gerente terá acesso aos 2 níveis anteriores e poderá olhar toda entrada e saída de produtos com todas as informações deles como: Valor, quantidade, quais foram vendidos (separados por menos e mais vendidos). Acesso as notas fiscais e recibos de cada cliente, todo o dinheiro/lucro da padaria.
+Tudo isso organizado e filtrado por dia/semana/mês/ano em uma planilha ordenada, selecionando quais tipos de filtros são desejados. O gerente também poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
+
+</font>
