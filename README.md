@@ -53,3 +53,23 @@ O gerente terá acesso aos 2 níveis anteriores e poderá olhar toda entrada e s
 Tudo isso organizado e filtrado por dia/semana/mês/ano em uma planilha ordenada, selecionando quais tipos de filtros são desejados. O gerente também poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
 
 </font>
+
+# Regras de negócio
+
+<font size=4>
+
+- RN01 - Criação da comanda: a comanda será criada pela atendente após o cliente falar quais produtos irá comprar.
+<br><br>
+- RN02 - Conteúdo da comanda: a comanda irá conter as informações do produto comprado (o que é, quantidade, valor), um número de identificação e nome do cliente.
+<br><br>
+- RN03 - Adicionar mais produtos: o caixa poderá escanear o código de barras e adicionar na comanda  produtos que não são pedidos no balcão (exemplos: balas, água, refrigerantes). Também poderá remover algo que o cliente não queira mais.
+<br><br>
+- RN04 - Nota fiscal: a nota fiscal será gerada somente após a finalização da venda.
+<br><br>
+- RN05 - O gerente: Somente o  gerente terá controle das informações de entrada e saída de produtos (valor, quantidade, quais foram vendidos).
+<br><br>
+- RN06 - Relatório de faturamento : o gerente terá acesso a uma planilha com: notas fiscais e recibos de cada cliente, todo o dinheiro/lucro da padaria, que poderá ser filtrado por: dia/semana/mês/ano.
+<br><br>
+- RN07 - Registro de produtos: O gerente poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
+
+</font>
