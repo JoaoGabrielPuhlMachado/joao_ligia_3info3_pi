@@ -73,3 +73,29 @@ Tudo isso organizado e filtrado por dia/semana/mês/ano em uma planilha ordenada
 - RN07 - Registro de produtos: O gerente poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
 
 </font>
+
+# Requisito Funcional
+
+<font size=4>
+
+- RF01 - Cadastro de produtos: O sistema deve permitir o cadastro de produtos disponíveis na padaria, incluindo nome, descrição, preço, quantidade em estoque e outras informações relevantes.
+<br><br>
+- RF02 - Controle de estoque: O sistema deve manter um registro atualizado do estoque de produtos da padaria, permitindo ao gerente verificar a quantidade de produtos disponíveis e identificar quando é necessário fazer novos pedidos aos fornecedores.
+<br><br>
+- RF03 - Comanda virtual: O sistema deve permitir que as atendentes criem uma comanda virtual para cada cliente, registrando os produtos solicitados, a quantidade, o valor e o total da comanda.
+<br><br>
+- RF04 - Edição da comanda: O sistema deve permitir que as atendentes e caixas editem a comanda virtual, adicionando ou removendo produtos, caso o cliente deseje fazer alterações no pedido.
+<br><br>
+- RF05 - Escaneamento de produtos: O sistema deve permitir que o caixa escaneie produtos do balcão, como balas, chicletes, água e refrigerantes, para incluí-los na comanda final do cliente.
+<br><br>
+- RF06 - Formas de pagamento: O sistema deve permitir que o caixa registre a forma de pagamento escolhida pelo cliente, como dinheiro, cartão de crédito ou débito, e gere a nota fiscal correspondente.
+<br><br>
+- RF07 - Relatórios de vendas: O sistema deve permitir que o gerente gere relatórios de vendas, incluindo informações como entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal, e outros filtros selecionados pelo gerente.
+<br><br>
+- RF08 - Níveis de acesso: O sistema deve ter três níveis de acesso: atendente, caixa e gerente, com permissões de visualização, adição e edição de produtos e comandas de acordo com o nível de acesso de cada usuário.
+<br><br>
+- RF09 - Agendamento de pedidos: O sistema deve permitir que o gerente agende e faça pedidos de novos produtos e itens para a padaria, entrando em contato com os fornecedores e definindo data de entrega dos produtos.
+<br><br>
+- RF10 - Organização e filtragem de informações: O sistema deve permitir que o gerente organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da padaria por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
+
+</font>
