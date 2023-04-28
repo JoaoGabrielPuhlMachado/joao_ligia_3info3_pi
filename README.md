@@ -99,3 +99,21 @@ Tudo isso organizado e filtrado por dia/semana/mês/ano em uma planilha ordenada
 - RF10 - Organização e filtragem de informações: O sistema deve permitir que o gerente organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da padaria por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
 
 </font>
+
+# Requisito Não Funcional
+
+<font size=4>
+
+- RNF01 - Tempo máximo de resposta: O sistema deve ter um tempo máximo de resposta de 5 segundos em condições normais de uso para uma solicitação do usuário.
+<br><br>
+- RNF02 - Backup e recuperação de dados: O sistema deve ser capaz de realizar backup e recuperação de dados de forma eficiente para garantir a disponibilidade do serviço em caso de falhas técnicas.
+<br><br>
+- RNF03 - Compatibilidade com diferentes navegadores e dispositivos: O sistema deve garantir a compatibilidade com diferentes navegadores e dispositivos para atender às necessidades dos usuários.
+<br><br>
+- RNF04 - Interface responsiva: A interface do sistema deve ser responsiva, permitindo que os usuários acessem o sistema de forma eficiente em diferentes dispositivos e tamanhos de tela.
+<br><br>
+- RNF05 - Segurança dos dados: O sistema deve garantir a segurança dos dados dos usuários, protegendo-os contra acessos não autorizados e ataques cibernéticos.
+<br><br>
+- RNF06 - Manutenção periódica: O sistema deve passar por manutenção periódica pelo menos uma vez a cada 1 ou 3 meses para garantir a estabilidade e confiabilidade do sistema.
+
+</font>
