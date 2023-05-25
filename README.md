@@ -9,7 +9,7 @@ Equipe:
     João Gabriel Puhl Machado
     Lígia de Angelis Gadotti
 
-Links do projeto: (Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.)
+Links do projeto:
 
     Documentação (esse documento)
     Backend: Repositório e Publicação
