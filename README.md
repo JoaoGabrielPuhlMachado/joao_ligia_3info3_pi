@@ -1,6 +1,20 @@
 # Gerenciamento de vendas para uma padaria
 
-**INCLUIR CABEÇALHO, CONFORME O MODELO**
+Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari. Um projeto criado para transformar uma padaria em algo mais tecnológico, um sistema para gerenciar o fluxo de vendas, visualizar, adicionar e editar pedidos, com níveis de acesso: atendente, caixa, gerente.
+
+Professores: Marco André Mendes e Alann Perini.
+
+Equipe:
+
+    João Gabriel Puhl Machado
+    Lígia de Angelis Gadotti
+
+Links do projeto: (Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.)
+
+    Documentação (esse documento)
+    Backend: Repositório e Publicação
+    FrontendRepositório e Publicação
+
 
 # Situação problema 
 
