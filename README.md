@@ -1,6 +1,6 @@
 # Gerenciamento de vendas para uma padaria
 
-Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari. Um projeto criado para transformar uma padaria em algo mais tecnológico, um sistema para gerenciar o fluxo de vendas, visualizar, adicionar e editar pedidos, com níveis de acesso: atendente, caixa, gerente.
+Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari. Um projeto criado para transformar uma padaria em algo mais tecnológico, um sistema para gerenciar o fluxo de vendas, visualizar, adicionar, editar e deletar pedidos, com níveis de acesso: Administrador e Cliente.
 
 Professores: Marco André Mendes e Alann Perini.
 
@@ -12,39 +12,15 @@ Equipe:
 Links do projeto:
 
     Documentação (esse documento)
-    Backend: Repositório e Publicação
-    FrontendRepositório e Publicação
+    Backend: [Repositório e Publicação](https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-django)
+    Frontend: [Repositório e Publicação](https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-vue-3)
 
 
 # Situação problema 
 
 <font size=4>
 
-O nosso cliente, Sr Genival, tem uma padaria de bairro chamada Padaria Céu e, devido a qualidade de seus produtos, ela está crescendo rapidamente. Recentemente, ele contratou mais funcionários para atendimento, caixa, panificação, etc. Assim, atualmente, ele consegue concentrar seus esforços para melhorar a gestão da padaria. Para isso, ele quer instalar um sistema de controle de vendas que permita ao caixa lançar as vendas realizadas. Como sua intenção é melhorar a gestão do negócio, é muito importante que ele consiga ter relatórios, como por exemplo, de vendas.
-
-</font>
-
-<font size=4>
-
-A Padaria Céu existe há 20 anos, está crescendo rapidamente e contratou novos funcionários, por isso precisa de um software. O seu dono, Sr Genival, cuida da gestão da padaria e faz o controle de estoque, no total há 5 funcionários: duas atendentes, duas pessoas responsáveis por assar os pães, preparar o que é necessário e um caixa.
-
-</font>
-
-<font size=4>
-
-O gerente começa o dia verificando e anotando se tem os produtos necessários para o dia e semana, caso algo precise ser comprado logo. O gerente olha o estoque e confere a quantidade de seus produtos, caso alguma coisa esteja quase ou em falta, ele encomenda este produto.
-
-O cliente chega ao balcão e faz seu pedido a uma das atendentes, ela anota o pedido em uma comanda e entrega ao cliente. O cliente vai ao caixa e entrega a comanda para o funcionário, que verifica se o cliente deseja algo mais e solicita a forma de pagamento.
-
-O cliente informa como deseja pagar e o caixa põe o dinheiro no caixa, caso seja cartão ele entrega a nota fiscal ao cliente se solicitado.
-
-Ao final do dia, a caixa separa as comandas e o gerente anota cada valor, nome do produto e quantia do produto vendido.
-
-</font>
-
-<font size=4>
-
-Para melhorar o funcionamento da padaria, o software deve permitir que a atendente marque o que foi pedido no sistema gerando uma comanda, o sistema calcula o valor total da comanda/pedido e agiliza o pagamento no caixa. Todos os pedidos ficarão registrados no sistema e no final do dia o gerente tem a possibilidade de gerar um relatório contendo: Entrada e saída de produtos, produtos mais vendidos e menos vendidos,  faturamento diário ou semanal.  Com a implantação desse sistema, espera-se melhorar a gestão financeira, a gestão do estoque dos produtos e o gerenciamento dos funcionários. 
+A nossa cliente, Lígia, quer abrir uma loja online de roupas chamada Lígia Roupas. Ela precisa de um site que permita que seus clientes visualizem os produtos, categorias de roupas e suas marcas, de maneira prática. Lígia irá administrar o site, junto de seus funcionários.
 
 </font>
 
@@ -52,15 +28,21 @@ Para melhorar o funcionamento da padaria, o software deve permitir que a atenden
 
 <font size=4>
 
+O sistema será dividido em 2 níveis de acesso: administradores e clientes.
+
+O administrador pode adicionar, editar, ver e deletar produtos, categorias, marcas, tamanhos e cores.
+
+O cliente pode ver os produtos, marcas, categorias, tamanhos, cores, perfil e deletar seu perfil
+
 O software irá controlar todo o estoque, organizando os produtos e filtrando por menor preço, maior preço, mais vendido, menos vendido, ordem alfabética crescente ou decrescente.
 
-O sistema será dividido em 3 níveis de acesso: atendente, caixa, gerente. 
+O administrador começa o dia verificando e anotando se tem os produtos necessários para o dia e semana, caso algo precise ser comprado logo. O administrador olha o estoque e confere a quantidade de seus produtos, caso alguma coisa esteja quase ou em falta, ele encomenda este produto. Ele também confere as marcas de roupa que a loja possui e adiciona ou remove esta marca caso a loja não tenha mais produtos da determinada marca.
 
-A atendente poderá apenas visualizar e adicionar os produtos dos clientes a uma comanda virtual. Após gerada, essa comanda terá as informações dos produtos e um número para identificar de qual cliente é a comanda. A comanda será criada após o atendente confirmar tudo que o cliente deseja, com um número de identificação igual ao da ficha retirada pelo cliente para ser atendido. Essa comanda terá o nome do cliente, quais produtos ele pediu, a quantidade deles, o valor deles e o total. Será possível a edição desses itens após o cliente encamimhar-se ao caixa e o funcionário confirmar seu pedido. Itens do balcão do caixa ou geladeira como: balas, chicletes, água e refrigerantes serão escaneados pelo caixa após o cliente entregá-los e serão registrados na comanda final, resolvendo o problema de produtos não listados na comanda inicial da atendente.
+O cliente acessa o site e olha todos os produtos disponíveis, podendo filtrá-los por marca e/ou categoria, ao escolher certo produto, irá ser automaticamente enviado para seu carrinho e decidir se irá adicionar mais produtos ou se irá pagar. O cliente ao acessar seu carrinho, poderá conferir todos os produtos que pediu e suas quantidades, ao selecionar pagamentos, terá uma aba para informar seus dados pessoais como: nome, email, telefone, endereço, cpf. Após informado seus dados, deverá escolher como pagar: cŕedito, débito, pix ou boleto, informando o que é pedido, como dados do seu cartão (número, código de segurança e nome inscrito no cartão).
 
-A caixa poderá visualizar e adicionar os produtos da mesma forma que a atendente, porém também poderá editar os produtos, caso o cliente queira adicionar ou remover algum produto. A caixa receberá a comanda da atendente com o número e irá chamar o cliente com esse número, perguntará ao cliente se isso é tudo que ele quer e depois perguntará a forma de pagamento. Finalizado o pagamento, a caixa emitirá a nota fiscal e entregará ao cliente, caso desejado.
+Ao finalizar a compra, o cliente irá receber um email informando seus dados e seus produtos pedidos, também confirmando seu pagamento (aprovado ou em andamento), irá receber o rastreamento do pedido após o envio desse pedido.
 
-O gerente terá acesso aos 2 níveis anteriores e terá acesso a toda entrada e saída de produtos com todas as informações deles como: valor, quantidade, quais foram vendidos (separados por menos e mais vendidos). Acesso as notas fiscais e recibos de cada cliente, e informações de faturamento e lucro da padaria. Tudo isso organizado e filtrado por dia/semana/mês/ano em uma planilha ordenada, selecionando quais tipos de filtros são desejados. O gerente também poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
+O Administrador irá receber o pedido do cliente, conferir tudo que foi requisitado e mandar o funcionário separar e preparar o produto do cliente. 
 
 </font>
 
@@ -68,24 +50,15 @@ O gerente terá acesso aos 2 níveis anteriores e terá acesso a toda entrada e 
 
 <font size=4>
 
-- **RN01 - Criação da comanda:** a comanda será criada pela atendente após o cliente falar quais produtos deseja comprar. 
+- **RN01 - Criação do pedido:** O pedido será criado pelo cliente, que escolhe os produtos, a quantidade e o tamanho e adiciona eles ao carrinho. 
 
-- RN02 - Conteúdo da comanda: a comanda irá conter as informações do produto comprado. **Produtos precisam estar no sistema.**
+- **RN02 - Acessar o carrinho:** O cliente acessa seu carrinho e confere todos os produtos que pediu e suas quantidades. Ele pode finalizar a sua compra, deletar algo ou continuar escolhendo roupas.
 
-- RN03 - Adicionar mais produtos: o caixa poderá escanear o código de barras e adicionar na comanda  produtos que não são pedidos no balcão (exemplos: balas, água, refrigerantes). Também poderá remover algo que o cliente não queira mais.
+- **RN03 - Pagamento:** Depois de finalizar o carrinho o cliente informa seus dados pessoais (nome, email, telefone, endereço, cpf) e escolhe o metódo de pagamento, que pode ser cŕedito, débito, pix ou boleto. Caso for escolhido o cartão de crédito, o cliente informa os dados do cartão (número, código de segurança e nome inscrito no cartão).
 
-- RN04 - Nota fiscal: a nota fiscal será gerada somente após a finalização da venda.
+- **RN04 - Confirmação do pedido:** o cliente recebe um email informando seus dados e seus produtos pedidos, também confirmando status de pagamento (aprovado ou em andamento) e rastreia o produto após seu envio.
 
-- RN05 - Controle de produtos: Somente o  gerente terá controle das informações de entrada e saída de produtos (valor, quantidade, quais foram vendidos).
-
-- RN06 - Relatório de faturamento: o gerente terá acesso a uma planilha com: notas fiscais e recibos de cada cliente, todo o dinheiro/lucro da padaria, que poderá ser filtrado por: dia/semana/mês/ano.
-
-- RN07 - Registro de produtos: O gerente poderá agendar e pedir novos produtos e itens para a padaria contatando um fornecedor e definindo um dia para a entrega de seus produtos.
-
-**modificar para regras+++++++++++++++++**
-- RF08 - Níveis de acesso: O sistema deve ter três níveis de acesso: atendente, caixa e gerente, com permissões de visualização, adição e edição de produtos e comandas de acordo com o nível de acesso de cada usuário.
-
-
+- **RN05 - Envio do pedido:** O Administrador recebe o pedido do cliente, confere tudo que foi requisitado e manda o funcionário separar e preparar o produto do cliente.
 
 </font>
 
@@ -95,46 +68,55 @@ O gerente terá acesso aos 2 níveis anteriores e terá acesso a toda entrada e 
 
 **Entrada**
 
-- **RF01 - Cadastro de produtos:** O sistema deve permitir o cadastro de produtos disponíveis na padaria. **Dados Necessários:** nome, descrição, preço, quantidade em estoque e outras informações relevantes.**Usuários:** Gerente
-
+- **RF01 - CRUD de produtos:** O sistema deve permitir o criar, editar, visualizar e deletar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja.**Usuários:** Administrador.
+  
+- **RF02 - Visualização de produtos:** O sistema deve permitir o cliente visualizar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja. **Usuários:** Cliente.
+  
 
 **Processamento**
 
-- RF09 - Agendamento de pedidos: O sistema deve permitir que o gerente agende e faça pedidos de novos produtos e itens para a padaria, entrando em contato com os fornecedores e definindo data de entrega dos produtos.
+- **RF03 - Carrinho:** O sistema deve permitir que o cliente selecione o produto desejado e adicione ele ao carrinho.
 
 
-- RF03 - Comanda virtual: O sistema deve permitir que as atendentes criem uma comanda virtual para cada cliente, registrando os produtos solicitados, a quantidade, o valor e o total da comanda.
+- **RF04 - Pedido:** O sistema deve criar uma nota fiscal com as informações contidas no carrinho após o cliente finalizar o pedido.
 
-- RF02 - Controle de estoque: O sistema deve manter um registro atualizado do estoque de produtos da padaria, permitindo ao gerente verificar a quantidade de produtos disponíveis e identificar quando é necessário fazer novos pedidos aos fornecedores.
+- **RF05 - Controle de estoque:** O sistema deve manter um registro atualizado do estoque de produtos da loja de roupa, permitindo ao administrador verificar a quantidade de produtos disponíveis e identificar quando é necessário fazer novos pedidos aos fornecedores.
 
-- RF04 - Edição da comanda: O sistema deve permitir que as atendentes e caixas editem a comanda virtual, adicionando ou removendo produtos, caso o cliente deseje fazer alterações no pedido.
+- **RF06 - Edição do carrinho:** O sistema deve permitir que os clientes editem o carrinho, adicionando ou removendo produtos, caso o cliente deseje fazer alterações no pedido.
 
-- RF05 - Escaneamento de produtos: O sistema deve permitir que o caixa escaneie produtos do balcão, como balas, chicletes, água e refrigerantes, para incluí-los na comanda final do cliente.
-
-- RF06 - Formas de pagamento: O sistema deve permitir que o caixa registre a forma de pagamento escolhida pelo cliente, como dinheiro, cartão de crédito ou débito, e gere a nota fiscal correspondente.
-
+- **RF07 - Formas de pagamento:** O sistema deve permitir que o cliente escolha a forma de pagamento como: dinheiro, pix, cartão de crédito ou débito, e gere a nota fiscal correspondente.
 
 **Saída**
 
-- RF07 - Relatórios de vendas: O sistema deve permitir que o gerente gere relatórios de vendas, incluindo informações como entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal, e outros filtros selecionados pelo gerente.
+- **RF08 - Relatórios de vendas:** O sistema deve permitir que o administrador gere relatórios de vendas, incluindo informações como entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal, e outros filtros selecionados pelo gerente.
 
-- RF10 - Gerenciamento de informações gerais: O sistema deve permitir que o gerente organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da padaria por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
+- **RF09 - Gerenciamento de informações gerais:** O sistema deve permitir que o gerente organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da loja por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
+  
+- **RF10 - Envio de email:** O sistema deve enviar um email para o cliente utilizando o email informado do mesmo, contendo informações da nota fiscal como: nome dos produtos, quantidade, método de pagamento, endereço de entrega, valor total da compra e individual dos produtos, rastreamento do pedido e número do pedido.
 
 </font>
 
 # Requisitos Não Funcionais
 <font size=4>
 
-**- RNF01 - Tempo máximo de resposta:** O sistema deve ter um tempo máximo de resposta de 5 segundos em condições normais de uso para uma solicitação do usuário.
+- **RNF01 - Tempo máximo de resposta:** O sistema deve ter um tempo máximo de resposta de 5 segundos em condições normais de uso para uma solicitação do usuário.
 
-- RNF02 - Backup e recuperação de dados: O sistema deve ser capaz de realizar backup e recuperação de dados de forma eficiente para garantir a disponibilidade do serviço em caso de falhas técnicas.
+- **RNF02 - Backup e recuperação de dados:** O sistema deve ser capaz de realizar backup e recuperação de dados de forma eficiente para garantir a disponibilidade do serviço em caso de falhas técnicas.
 
-- RNF03 - Compatibilidade com diferentes navegadores e dispositivos: O sistema deve garantir a compatibilidade com diferentes navegadores e dispositivos para atender às necessidades dos usuários.**Quais???**
+- **RNF03 - Compatibilidade com diferentes navegadores e dispositivos:** O sistema deve garantir a compatibilidade com diferentes navegadores e dispositivos para atender às necessidades dos usuários, como: chrome, opera, firefox, edge e etc.
 
-- RNF04 - Interface responsiva: A interface do sistema deve ser responsiva, permitindo que os usuários acessem o sistema de forma eficiente em diferentes dispositivos e tamanhos de tela.
+- **RNF04 - Interface responsiva:** A interface do sistema deve ser responsiva, permitindo que os usuários acessem o sistema de forma eficiente em diferentes dispositivos e tamanhos de tela.
 
-- RNF05 - Segurança dos dados: O sistema deve garantir a segurança dos dados dos usuários, protegendo-os contra acessos não autorizados e ataques cibernéticos.
+- **RNF05 - Segurança dos dados:** O sistema deve garantir a segurança dos dados dos usuários, protegendo-os contra acessos não autorizados e ataques cibernéticos.
 
-- RNF06 - Manutenção periódica: O sistema deve passar por manutenção periódica pelo menos uma vez a cada 1 ou 3 meses para garantir a estabilidade e confiabilidade do sistema.
+- **RNF06 - Manutenção periódica:** O sistema deve passar por manutenção periódica pelo menos uma vez a cada 1 ou 3 meses para garantir a estabilidade e confiabilidade do sistema.
 
 </font>
+
+# Casos de Uso
+<font size=4>
+
+    Link do Diagrama: 
+
+</font>
+
