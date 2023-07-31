@@ -72,8 +72,12 @@ O Administrador irá receber o pedido do cliente, conferir tudo que foi requisit
   
 - **RF02 - Visualização de produtos:** O sistema deve permitir o cliente visualizar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja. **Usuários:** Cliente.
   
-
+** falta crud cliente***
 **Processamento**
+
+** R.F. 01 - Autenticação de usuário: tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando para a página principal de seu perfil de acesso.
+Dados necessários: login, senha
+Usuários: todos os níveis de usuário.
 
 - **RF03 - Carrinho:** O sistema deve permitir que o cliente selecione o produto desejado e adicione ele ao carrinho.
 
