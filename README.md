@@ -60,6 +60,7 @@ O Administrador irá receber o pedido do cliente, conferir tudo que foi requisit
 
 - **RN05 - Envio do pedido:** O Administrador recebe o pedido do cliente, confere tudo que foi requisitado e manda o funcionário separar e preparar o produto do cliente.
 
+- **RN06 - Edição do carrinho:** O cliente edita o carrinho, adicionando ou removendo produtos, caso o cliente deseje fazer alterações no pedido.
 </font>
 
 # Requisitos funcionais
@@ -68,36 +69,82 @@ O Administrador irá receber o pedido do cliente, conferir tudo que foi requisit
 
 **Entrada**
 
-- **RF01 - CRUD de produtos:** O sistema deve permitir o criar, editar, visualizar e deletar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja.**Usuários:** Administrador.
+- **RF01 - CRUD de produtos:** O sistema deve permitir o criar, editar, visualizar e deletar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja.
+<br>
+Usuários: Admin.
+<br>
+Dados Necessários:
+<br>
+Produtos: quantidade, valor, categoria, marca, tamanho, cor.
+<br>
+Categorias: Ex: tênis, calça, camisa.
+<br>
+Marcas: Ex: adidas, nike, puma.
+<br>
+Tamanhos: Ex: p, m, g.
+<br>
+Cores: Ex: branco, preto, azul.
   
-- **RF02 - Visualização de produtos:** O sistema deve permitir o cliente visualizar: produtos, categorias, marcas, tamanhos e cores disponíveis na loja. **Usuários:** Cliente.
-  
-** falta crud cliente***
+- **RF02 - CRUD de clientes:** O sistema deve permitir o criar, editar, visualizar e deletar: clientes.
+<br>
+Usuários: Todos os usuários.
+<br>
+Dados Necessários: Email, senha, cpf, telefone, nome, data de nascimento, endereço.
+
 **Processamento**
 
-** R.F. 01 - Autenticação de usuário: tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando para a página principal de seu perfil de acesso.
-Dados necessários: login, senha
-Usuários: todos os níveis de usuário.
+- **RF03 - Visualização de produtos:** O sistema deve permitir o cliente visualizar: produtos, categorias, marcas, tamanhos e cores disponíveis na 
+loja.
+<br>
+Usuários: Todos os usuários.
 
-- **RF03 - Carrinho:** O sistema deve permitir que o cliente selecione o produto desejado e adicione ele ao carrinho.
+- **RF04 - Autenticação de usuário:** tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando para a página principal de seu perfil de acesso.
+<br>
+Usuários: Todos os níveis de usuário.
+<br>
+Dados necessários: Login, senha.
 
+- **RF05 - Carrinho:** O sistema deve permitir que o cliente selecione o produto desejado e adicione ele ao carrinho.
+<br>
+Usuários: Clientes.
+<br>
+Dados Necessários: Produtos, quantidade.
 
-- **RF04 - Pedido:** O sistema deve criar uma nota fiscal com as informações contidas no carrinho após o cliente finalizar o pedido.
+- **RF06 - Pedido:** O sistema deve criar uma nota fiscal com as informações contidas no carrinho após o cliente finalizar o pedido.
+<br>
+Usuários: Clientes.
+<br>
+Dados Necessários: Produtos, valor total, endereço, data de emissão.
 
-- **RF05 - Controle de estoque:** O sistema deve manter um registro atualizado do estoque de produtos da loja de roupa, permitindo ao administrador verificar a quantidade de produtos disponíveis e identificar quando é necessário fazer novos pedidos aos fornecedores.
+- **RF07 - Controle de estoque:** O sistema deve manter um registro atualizado do estoque de produtos da loja de roupa, permitindo ao administrador verificar a quantidade de produtos disponíveis e identificar quando é necessário fazer novos pedidos aos fornecedores.
+<br>
+Usuários: Admin.
+<br>
+Dados Necessários: Quantidade de Produtos.
 
-- **RF06 - Edição do carrinho:** O sistema deve permitir que os clientes editem o carrinho, adicionando ou removendo produtos, caso o cliente deseje fazer alterações no pedido.
-
-- **RF07 - Formas de pagamento:** O sistema deve permitir que o cliente escolha a forma de pagamento como: dinheiro, pix, cartão de crédito ou débito, e gere a nota fiscal correspondente.
+- **RF08 - Formas de pagamento:** O sistema deve permitir que o cliente escolha a forma de pagamento como: dinheiro, pix, cartão de crédito ou débito, e gere a nota fiscal correspondente.
+<br>
+Usuários: Clientes.
+<br>
+Dados Necessários: Informações do cartão (Caso selecionado).
 
 **Saída**
 
-- **RF08 - Relatórios de vendas:** O sistema deve permitir que o administrador gere relatórios de vendas, incluindo informações como entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal, e outros filtros selecionados pelo gerente.
+- **RF09 - Relatórios de vendas:** O sistema deve permitir que o administrador gere relatórios de vendas, incluindo informações como entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal, e outros filtros selecionados pelo gerente.
+<br>
+Usuários: Admin.
+<br>
+Dados Necessários: Entrada e saída de produtos, produtos mais vendidos e menos vendidos, faturamento diário ou semanal e etc.
 
-- **RF09 - Gerenciamento de informações gerais:** O sistema deve permitir que o gerente organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da loja por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
-  
-- **RF10 - Envio de email:** O sistema deve enviar um email para o cliente utilizando o email informado do mesmo, contendo informações da nota fiscal como: nome dos produtos, quantidade, método de pagamento, endereço de entrega, valor total da compra e individual dos produtos, rastreamento do pedido e número do pedido.
+- **RF10 - Gerenciamento de informações gerais:** O sistema deve permitir que o administrador organize e filtre as informações de entrada e saída de produtos, notas fiscais, recibos e lucro da loja por dia, semana, mês ou ano, de acordo com os tipos de filtros desejados.
+<br>
+Usuários: Admin.
 
+- **RF11 - Envio de email:** O sistema deve enviar um email para o cliente utilizando o email informado do mesmo, contendo informações da nota fiscal como: nome dos produtos, quantidade, método de pagamento, endereço de entrega, valor total da compra e individual dos produtos, rastreamento do pedido e número do pedido.
+<br>
+Usuários: Clientes.
+<br>
+Dados Necessários: Email.
 </font>
 
 # Requisitos Não Funcionais
@@ -114,6 +161,8 @@ Usuários: todos os níveis de usuário.
 - **RNF05 - Segurança dos dados:** O sistema deve garantir a segurança dos dados dos usuários, protegendo-os contra acessos não autorizados e ataques cibernéticos.
 
 - **RNF06 - Manutenção periódica:** O sistema deve passar por manutenção periódica pelo menos uma vez a cada 1 ou 3 meses para garantir a estabilidade e confiabilidade do sistema.
+
+- **RNF07 - Linguagem do sistema:** O sistema deve ser desenvolvido utilizando python como linguagem de backend, javascript como frontend, sendo o banco de dados desenvolvido em django e loja de roupas desenvolvida em vue.
 
 </font>
 
