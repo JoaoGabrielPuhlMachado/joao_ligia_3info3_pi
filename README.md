@@ -169,7 +169,7 @@ Dados Necessários: Email.
 # Casos de Uso
 <font size=4>
 
-    Link do Diagrama: 
+    Link do Diagrama: https://drive.google.com/file/d/1gQ0nJkgeyv1I9-ZBKYMksHbUBTCHk3Om/view?usp=sharing
 
 </font>
 
