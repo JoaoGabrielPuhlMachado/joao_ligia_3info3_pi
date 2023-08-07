@@ -81,7 +81,7 @@ Categorias: Ex: tênis, calça, camisa.
 <br>
 Marcas: Ex: adidas, nike, puma.
 <br>
-Tamanhos: Ex: p, m, g.
+Tamanhos: Ex: pp, p, m, g.
 <br>
 Cores: Ex: branco, preto, azul.
   
