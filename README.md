@@ -11,9 +11,8 @@ Equipe:
 
 Links do projeto:
 
-    Documentação (esse documento)
-    Backend: [Repositório e Publicação](https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-django)
-    Frontend: [Repositório e Publicação](https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-vue-3)
+    Backend: (https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-django)
+    Frontend: (https://github.com/JoaoGabrielPuhlMachado/ligiaroupas-vue-3)
 
 
 # Situação problema 
